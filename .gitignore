@@ -1,0 +1,8 @@
+# compile
+*.o
+kernal.elf
+*.iso
+bochslog.txt
+
+# os related
+.DS_STORE
