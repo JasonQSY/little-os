@@ -5,7 +5,7 @@ FLAGS equ 0x0
 CHECKSUM equ -MAGIC_NUMBER
 KERNAL_STACK_SIZE equ 4096
 
-extern mo
+extern main
 
 section .bss
 align 4
@@ -20,7 +20,7 @@ align 4
 
 loader:
     mov esp, kernal_stack + KERNAL_STACK_SIZE
-    call mo
+    call main
     mov eax, 0xCAFEBABE
 .loop:
     jmp .loop
