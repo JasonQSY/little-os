@@ -1,6 +1,6 @@
 # compile
 *.o
-kernal.elf
+kernel.elf
 *.iso
 bochslog.txt
 

@@ -2,4 +2,4 @@ default=0
 timeout=0
 
 title os
-kernal /boot/kernal.elf
+kernel /boot/kernel.elf
