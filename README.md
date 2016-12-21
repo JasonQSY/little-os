@@ -3,6 +3,14 @@ A simple os following the little book about OS development
 
 ## Environments
 
+We need
+
+- `nasm` to compile assembly code.
+- `gcc` to compile C code.
+- GNU `ld` to link the code and generate the kernel.
+- `genisoimage` or alternative to make a `os.iso` with `grub`
+- `bochs` to run the `os.iso`
+
 I use virtual ubuntu to compile the code
 
 ```
@@ -30,6 +38,13 @@ To run the os,
 ```
 make run
 ```
+
+## Results
+
+- [x] display a character
+- [x] display a cursor
+- [ ] implement printf to the screen
+- [ ] further objectives
 
 ## Reference
 
