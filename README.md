@@ -27,7 +27,7 @@ This is my main platform. We can use `homebrew` to solve the dependencies.
 brew install nasm cdrtools binutils
 ```
 
-where `cdrtools` includes `mksiofs` and `binutils` includes GNU `ld`. However, `brew install bochs` fails currently, so we need to compile it manually. See also https://github.com/Homebrew/homebrew-x11/issues/263
+where `cdrtools` includes `mkisofs` and `binutils` includes GNU `ld`. However, `brew install bochs` fails currently, so we need to compile it manually. See also https://github.com/Homebrew/homebrew-x11/issues/263
 
 ## Build
 

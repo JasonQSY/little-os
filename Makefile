@@ -10,7 +10,11 @@ LDFLAGS = -T link.ld -melf_i386
 AS = nasm
 ASFLAGS = -f elf
 
-ISO = genisoimage
+ifeq ($(shell uname), Darwin)
+	ISO = mkisofs
+else
+	ISO = genisoimage
+endif
 
 all: kernel.elf
 
