@@ -11,13 +11,23 @@ We need
 - `genisoimage` or alternative to make a `os.iso` with `grub`
 - `bochs` to run the `os.iso`
 
-I use virtual ubuntu to compile the code
+### Ubuntu
+
+Just
 
 ```
-sudo apt-get install build-essential nasm genisoimage
+sudo apt-get install build-essential nasm genisoimage bochs bochs-sdl
 ```
 
-and since `bochs` has a GUI, I use OS X to run. It is a shame that `brew install bochs` fails currently, so we need to compile it manually. See also https://github.com/Homebrew/homebrew-x11/issues/263
+### Mac OS X
+
+This is my main platform. We can use `homebrew` to solve the dependencies.
+
+```
+brew install nasm cdrtools binutils
+```
+
+where `cdrtools` includes `mksiofs` and `binutils` includes GNU `ld`. However, `brew install bochs` fails currently, so we need to compile it manually. See also https://github.com/Homebrew/homebrew-x11/issues/263
 
 ## Build
 
